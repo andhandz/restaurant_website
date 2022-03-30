@@ -1,0 +1,45 @@
+<h2>Filtruj:</h2>
+<div id="container">{{currency()}}
+    <div id="cuisine">
+    <h3>Rodzaj kuchni:</h3>
+    <li *ngFor="let dish of getCuisine()">
+        <input type="checkbox" value="{{dish}}" (change)="choosenCuisine($event)">
+        {{dish}}
+    </li>
+    </div>
+    <div id="category">
+    <h3>Kategoria:</h3>
+    <li *ngFor="let dish of getCategory()">
+        <input type="checkbox" value="{{dish}}" (change)="choosenCategory($event)">
+        {{dish}}
+    </li>
+</div>
+    <div id="price">
+    <h3>Zakres ceny:</h3>
+    <label>Minimum: {{strminp}}</label>
+    <input type="range"  (input)="refreshMinPrice($event)" min="{{min}}" max="{{maxp}}" value="{{minp}}">
+    <label>Maximum: {{strmaxp}}</label>
+    <input type="range" (input)=refreshMaxPrice($event) min="{{minp}}" max="{{max}}" value="{{maxp}}">
+    </div>
+    <div id="rating">
+    <h3>Ocena:</h3>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,0)"> 0/5
+    </li>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,1)"> 1/5
+    </li>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,2)"> 2/5
+    </li>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,3)"> 3/5
+    </li>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,4)"> 4/5
+    </li>
+    <li>
+        <input type="checkbox" (change)="choosenRate($event,5)"> 5/5
+    </li>
+    </div>
+</div>

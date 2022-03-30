@@ -1,0 +1,47 @@
+<div id="container">
+    <h3>Aktualizuj danie</h3>
+    <form [formGroup]="dishForm" (submit)="click()">
+        <div>
+            <label>Nazwa:</label>
+            <input id="form-elem" name="name" formControlName="name">
+        </div>
+        <p *ngIf = "dishForm.get('name')!.touched && dishForm.get('name')!.invalid" style="color: red;">Name is required</p>
+        <div>
+            <label>Kuchnia:</label>
+            <input id="form-elem" name="cuisine" formControlName="cuisine">
+        </div>
+        <p *ngIf = "dishForm.get('cuisine')!.touched && dishForm.get('cuisine')!.invalid" style="color: red;">Cuisine is required</p>
+        <div>
+            <label>Kategoria:</label>
+            <input id="form-elem" name="category" formControlName="category">
+        </div>
+        <p *ngIf = "dishForm.get('category')!.touched && dishForm.get('category')!.invalid" style="color: red;">Category is required</p>
+        <div>
+            <label>Produkty:</label>
+            <input id="form-elem" name="products" formControlName="products">
+        </div>
+        <p *ngIf = "dishForm.get('products')!.touched && dishForm.get('products')!.invalid" style="color: red;">Products are required</p>
+        <div>
+            <label>Dostępna ilość:</label>
+            <input id="form-elem" type="number" name="quantity" formControlName="quantity">
+        </div>
+        <p *ngIf = "dishForm.get('quantity')!.touched && dishForm.get('quantity')!.invalid" style="color: red;">Quantity is required</p>
+        <div>
+            <label>Cena($):</label>
+            <input id="form-elem" type="number" name="price" formControlName="price">
+        </div>
+        <p *ngIf = "dishForm.get('price')!.touched && dishForm.get('price')!.invalid" style="color: red;">Price is required</p>
+        <div>
+            <label>Opis:</label><br>
+            <textarea cols="29" rows="5" id="description" name="description" formControlName="description"></textarea>
+        </div>
+        <p *ngIf = "dishForm.get('description')!.touched && dishForm.get('description')!.invalid" style="color: red;">Description is required</p>
+        <div>
+            <label>IMG:</label>
+            <input id="form-elem" name="img" formControlName="img">
+        </div>
+        <p *ngIf = "dishForm.get('img')!.touched && dishForm.get('img')!.invalid" style="color: red;">IMG is required</p>
+        <button id="sub" type="submit">Zatwierdź</button>
+    </form>
+</div>
+<br>

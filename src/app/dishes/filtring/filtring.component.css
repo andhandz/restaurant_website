@@ -1,0 +1,68 @@
+h2{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+    position: relative;
+    top:2vw;
+    background: rgba(241, 229, 213, 0.596);
+    box-shadow: gray 5px 5px 5px;
+}
+#container{
+    list-style-type: none;
+    display: grid;
+    grid-template-areas: 
+    '. cu ca r .'
+    '. p p p .';
+    grid-template-columns: 10vw 25vw 25vw 25vw 10vw;
+    margin-bottom: 5vw;
+    background: rgb(241, 229, 213);
+    box-shadow: gray 5px 5px 5px;
+}
+#cuisine{
+    padding-top: 3vw ;
+    grid-area: cu;
+    font-size: 1.8vw;
+}
+#category{
+    grid-area: ca;
+    font-size: 1.8vw;
+    padding-top: 3vw ;
+}
+#rating{
+    grid-area: r;
+    font-size: 1.8vw;
+    padding-top: 3vw ;
+}
+#price{
+    margin-bottom: 2vw;
+    grid-area: p;
+    text-align: center;
+}
+label{
+    font-size: 1.8vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+h3{
+    text-align: center;
+    font-size: 2.2vw;
+}
+li{
+    margin-left: 8vw;
+}
+input:hover{
+    cursor: pointer;
+}
+#rating h3{
+    position: relative;
+    right: 2vw;
+}
+#price input{
+    width: 20vw;
+    height: 2vw;
+}
+#cuisine input, #rating input, #category input{
+    height: 1.8vw;
+    width: 1.8vw;
+}

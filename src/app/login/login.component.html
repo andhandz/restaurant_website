@@ -1,0 +1,21 @@
+<div id="container">
+    <br>
+    <mat-card-title>Sign in</mat-card-title><br><br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email: </mat-label><br>
+        <input matInput [formControl]="email" required><br>
+        <mat-error *ngIf="email.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Password: </mat-label><br>
+        <input [type]="hide ? 'password' : 'text'" matInput [formControl]="password" required><br>
+        <mat-error *ngIf="password.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button (click)="logIn()" [disabled]="(!password.valid || !email.valid )">Login</button>
+    <br>
+    <p>Jeśli nie posiadasz konta: <button mat-raised-button (click)="register()">Register</button></p>
+
+</div>

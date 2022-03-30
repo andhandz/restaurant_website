@@ -1,0 +1,28 @@
+<div id="big">
+<div id="container">
+    <h3>Wybierz typ persystencji</h3>
+    <button mat-raised-button (click)="setLocal()">Local</button>
+    <button mat-raised-button (click)="setSession()">Session</button>
+    <button mat-raised-button (click)="setNone()">None</button>
+</div>
+<div id="container" *ngIf="userDataList != null">
+    <h2>Lista użytkowników:</h2>
+    <div id="dd">
+    <p id="user">Użytkownik</p>
+    <p id="rank">Ranga</p>
+    <p id="st">Działanie</p>
+  </div>
+    <div id="tabela" *ngFor="let user of userDataList" class="user">
+      <p class="title">{{user.email}}</p>
+      <p class="role">{{showRole(user)}}</p>
+      <button id="btn" *ngIf="visibility(user.key)" mat-raised-button (click)="giveBan(user)">Zbanuj</button>
+      <button id="btn" *ngIf="!visibility(user.key)"  mat-raised-button (click)="removeBan(user.key)">Odbanuj</button>
+    <div id="change">
+      <p id="z">Zmień range</p>
+      <button class="b1" id="rolebtn" (click)="click('admin',user)">a</button>
+      <button class="b2" id="rolebtn" (click)="click('manager',user)" >m</button>
+      <button class="b3" id="rolebtn" (click)="click('user',user)">u</button>
+    </div>
+    </div>
+  </div>
+</div>

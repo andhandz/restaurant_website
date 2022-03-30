@@ -1,0 +1,31 @@
+#rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#div1{
+    background-color: gold;
+    width: 2vw;
+    height: 2vw;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+#div2{
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+#rating:hover{
+    cursor: pointer;
+}
+#rate{
+    font-size: 2.1vw;
+    position: relative;
+    top:4vw;
+    right: 10vw;
+    text-shadow: none;
+    font-weight: bold;
+}

@@ -1,0 +1,24 @@
+<div id="menu">{{initialMinMax()}}
+    <div id="waluta">
+      <button id="curr" (click)="currencyForStart()">$</button>
+      <button id="curr" (click)="changeForEuro()">€</button>
+    </div>
+    <app-booked-dishes [dishesCounter]="dishesCounter"></app-booked-dishes>
+    <app-filtring [dishes]="dishes" [euro]="euro" [dolar]="dolar" [max]="max" [min]="min" (FilterTab)="updateFilter($event)" (Minp)="Minp($event)" (Maxp)="Maxp($event)"></app-filtring>
+    <div id="sizebtns">
+      <p>Wybierz liczbę wyświetlanych dań na stronie:</p>
+      <button id="sbtn" (click)="changePagValue(1)">1</button>
+      <button id="sbtn" (click)="changePagValue(2)">2</button>
+      <button id="sbtn" (click)="changePagValue(3)">3</button>
+      <button id="sbtn" (click)="changePagValue(4)">4</button>
+      <button id="sbtn" (click)="changePagValue(5)">5</button>
+      <button id="sbtn" (click)="changePagValue(6)">6</button>
+    </div>
+    <pagination-controls (pageChange)="p = $event" style="text-align: center;"></pagination-controls>
+    <div *ngFor="let dish of filterDishes() | paginate: {itemsPerPage: x, currentPage: p}">
+    <app-dishes [dish]="dish"
+     [max]="max" [min]="min" [euro]="euro" [dolar]="dolar">
+    </app-dishes>
+  </div>
+  <pagination-controls (pageChange)="p = $event" style="text-align: center;"></pagination-controls>
+  </div>

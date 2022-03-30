@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="container">{{makestr()}}
+    <div id="header">
+        <h2>{{dish.name | uppercase}}</h2>
+        <app-rating (setRating)="setRating($event)" [dish]="this.dish">
+        </app-rating>
+    </div>
+    <div id="photo">
+        <img src={{dish.img}}>
+    </div>
+    <div id="rest">
+        <div id="category">{{dish.category}}</div>
+        <div id="cuisine">Kuchnia {{dish.cuisine | uppercase}}</div>
+        <div id="description"> Opis: {{dish.description}}</div>
+        <div id="products"> Składniki potrawy: {{productsString}}</div>
+        <div id="quantity" [ngStyle]="ComunicatVisualChanges()">{{Comunicat()}}</div>
+        <div id="price"> Cena: {{dish.price}}$</div>
+        <button id="addbtn" (click) = "addDish()" [ngStyle]="styleDisplayAddBtn()"><i class="fa fa-plus"></i></button>
+        <button id="rmvbtn" (click) = "rmvDish()" [ngStyle]="styleDisplayRmvBtn()"><i class="fa fa-minus"></i></button>
+    </div>
+</div>
+
+<div *ngIf="canWriteReview()" id="form">
+    <h3>Podziel się opinią</h3>
+    <div>
+        <label></label>
+        <input id="nickname" name="nickname" #nickname placeholder="user">
+    </div>
+    <div>
+        <label></label>
+        <input id="title" name="title" #title placeholder="Tytuł">
+    </div>
+    <div>
+        <label></label>
+        <textarea name="body" rows="15" cols="15" #body placeholder="Treść"></textarea>
+    </div>
+    <div>
+        <label></label>
+        <input type="date" id="date" name="date" #date>
+    </div>
+    <button id="subtn" (click)="submit(nickname.value,title.value,body.value,date.value)">Prześlij</button>
+</div>
+<h2 id="opinie">Opinie:</h2>
+<div id="posts" *ngFor="let post of posts">
+    <div id="post">
+        <p id="pnick">Użytkownik: {{post.nickname}}</p>
+        <p id="ptitle">{{post.title}}</p>
+        <p id="pbody">{{post.body}}</p>
+        <p id="pdate">{{post.date}}</p>
+    </div>
+</div>
+
+
+

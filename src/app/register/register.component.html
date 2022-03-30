@@ -1,0 +1,31 @@
+<div id="container"><br>
+    <mat-card-title>Register</mat-card-title><br><br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email: </mat-label><br>
+        <input matInput [formControl]="email" required><br>
+        <mat-error *ngIf="email.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>nickname: </mat-label><br>
+        <input matInput [formControl]="nickname" required><br>
+        <mat-error *ngIf="nickname.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Password: </mat-label><br>
+        <input [type]="hide ? 'password' : 'text'" matInput [formControl]="password" required><br>
+        <mat-error *ngIf="password.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Repeat password: </mat-label><br>
+        <input [type]="hide ? 'password' : 'text'" matInput [formControl]="repeatPassword" required><br>
+        <mat-error *ngIf="repeatPassword.invalid"> {{throwError()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button (click)="register()" [disabled]="!checkValidData()">Register</button>
+    <br>
+    <p>Jeśli posiadasz konto: <button mat-raised-button (click)="login()">Log in</button></p>
+</div>

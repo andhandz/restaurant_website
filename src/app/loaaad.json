@@ -1,0 +1,172 @@
+   {
+   "dishes":[
+    {
+        "id": 1,
+        "name": "Spaghetti",
+        "cuisine": "Włoska",
+        "category": "Danie główne",
+        "products": ["makaron","sos pomidorowy","mielone","oregano"
+        ],
+        "quantity": 20,
+        "price": 10.0,
+        "description": "Znana włoska potrawa, którą charakteryzuje podłużny makaron oraz przepyszny sos pomidorowy.",
+        "img": "https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/spaghetti_bolognese_01.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 2,
+        "name": "Pizza Margherita",
+        "cuisine": "Włoska",
+        "category": "Danie główne",
+        "products": ["mąka","drożdże","sos pomidorowy","ser żółty","oregano"
+        ],
+        "quantity": 30,
+        "price": 15.0,
+        "description": "Znana włoska potrawa, na puszystym cieście o średnicy 32cm",
+        "img": "https://winotoskanii.pl/data/include/img/news/1472125853.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 3,
+        "name": "Lasagne",
+        "cuisine": "Włoska",
+        "category": "Danie główne",
+        "products": ["makaron","sos pomidorowy","mielone","oregano","ser żółty"
+        ],
+        "quantity": 15,
+        "price": 12.0,
+        "description": "Znana włoska potrawa, zawierająca mięsny pomidorowy sos pomiędzy poziomami makaronu.",
+        "img": "https://www.mojegotowanie.pl/media/cache/default_medium/uploads/media/recipe/0002/02/lasagne-z-sosem-beszamelowym.jpeg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 4,
+        "name": "Burger",
+        "cuisine": "Amerykańska",
+        "category": "Danie główne",
+        "products": ["bułka", "wołowina","ser zółty","bekon","sałata","pomidor","sos majonezowo-ketchupowy"
+        ],
+        "quantity": 40,
+        "price": 14.0,
+        "description": "Kanapka podawana na ciepło ze swieżo upieczoną wołowiną rozpływającą się w ustach.",
+        "img": "https://cdn.galleries.smcloud.net/t/galleries/gf-raWS-ncpe-Zvvm_amerykanska-kuchnia-co-warto-sprobowac-w-restauracji-jpg-664x442-nocrop.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 5,
+        "name": "Amerykański Hot Dog",
+        "cuisine": "Amerykańska",
+        "category": "Danie główne",
+        "products": ["bułka","parówka","ketchup","musztarda","zasmażana cebula","ogórek","pomidor"
+        ],
+        "quantity": 60,
+        "price": 8.0,
+        "description": "Podłużna mięka bułka podgrzewana razem z 25cm parówką.",
+        "img": "https://streetfoodpolska.pl/web/wp-content/uploads/2020/01/IMG_8696.jpeg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 6,
+        "name": "Kurczak Gong Bao",
+        "cuisine": "Chińska",
+        "category": "Danie główne",
+        "products": ["kurczak","orzechy","ryż","ostre przyprawy"
+        ],
+        "quantity": 20,
+        "price": 12.0,
+        "description": "Kurczak w chińskim stylu podawany na ostro razem z orzechami oraz ryżem",
+        "img": "https://labonita.pl/wp-content/uploads/2018/06/labonita-12-shutterstock-484616986.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 7,
+        "name": "Panierowany filet z kurczaka",
+        "cuisine": "Polska",
+        "category": "Danie główne",
+        "products": ["kurczak","ziemniaki","mąka","jajka","bułka tarta"
+        ],
+        "quantity": 50,
+        "price": 9.0,
+        "description": "Filet z kurczaka podawany w słonej chrupiącej panierce wraz z ziemniakami",
+        "img": "https://kulinarnapolska.org/wp-content/uploads/2019/09/najlepsze-kotlety-z-piersi-kurczaka-przepis-schabowe-5.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 8,
+        "name": "Pulpety w sosie pomidorowym",
+        "cuisine": "Europejska",
+        "category": "Danie główne",
+        "products": ["mielone","sos pomidorowy","oregano","ziemniaki"
+        ],
+        "quantity": 50,
+        "price": 10.0,
+        "description": "Duszone wołowe mięso mielone w sosie pomidorowym podawane razem z ziemniakami",
+        "img": "https://www.slodkieokruszki.pl/wp-content/uploads/2018/10/Pulpeciki-w-sosie-pomidorowym-prosty-przepis-na-obiad-1.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 9,
+        "name": "Frytki",
+        "cuisine": "Belgijska",
+        "category": "Przystawka",
+        "products": ["ziemniaki","ketchup"
+        ],
+        "quantity": 150,
+        "price": 5.0,
+        "description": "grubo krojone frytki",
+        "img": "https://cdn-dibkm.nitrocdn.com/UqnPsZALxbQrkMzMKdQOlJjZtCXUrIve/assets/static/optimized/rev-d65615b/wp-content/uploads/2021/08/kraftowe_frytki_belgijskie.png",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 10,
+        "name": "Kulki serowe",
+        "cuisine": "Europejska",
+        "category": "Przystawka",
+        "products": ["ser","bułka tarta"
+        ],
+        "quantity": 150,
+        "price": 6.0,
+        "description": "10 panierowanych kulek serowych",
+        "img": "https://keeprecipes.com/sites/keeprecipes/files/imagecache/recipe_large/ks05.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 11,
+        "name": "Pomidorowa",
+        "cuisine": "Europejska",
+        "category": "Zupa",
+        "products": ["makaron","przecier pomidorowy","śmietana"
+        ],
+        "quantity": 100,
+        "price": 4.0,
+        "description": "Na bieżąco gotowana zupa pomidorowa podawana razem ze śmietaną oraz makaronem",
+        "img": "https://cdn.aniagotuje.com/pictures/articles/2021/10/20290189-v-1500x1500.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    },
+    {
+        "id": 12,
+        "name": "Grzybowa",
+        "cuisine": "Europejska",
+        "category": "Zupa",
+        "products": ["makaron","grzyby","marchewka"
+        ],
+        "quantity": 100,
+        "price": 4.5,
+        "description": "Zupa na słono, podawana z makaronem oraz marchewką.",
+        "img": "https://kulinarneprzeboje.pl/wp-content/uploads/2019/11/zupa-grzybowa-przepis.jpg",
+        "rating": 0,
+        "cartCounter": 0
+    }
+]
+}

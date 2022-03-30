@@ -1,0 +1,14 @@
+<div id='rating'>
+    {{refresh()}}
+<div id="div1" *ngIf="val >= 1" (click)="set(1)"></div>
+<div id="div1" *ngIf="val >= 2" (click)="set(2)"></div>
+<div id="div1" *ngIf="val >= 3" (click)="set(3)"></div>
+<div id="div1" *ngIf="val >= 4" (click)="set(4)"></div>
+<div id="div1" *ngIf="val == 5" (click)="set(5)"></div>
+<div id="div2" *ngIf="val < 1" (click)="set(1)"></div>
+<div id="div2" *ngIf="val < 2" (click)="set(2)"></div>
+<div id="div2" *ngIf="val < 3" (click)="set(3)"></div>
+<div id="div2" *ngIf="val < 4" (click)="set(4)"></div>
+<div id="div2" *ngIf="val < 5" (click)="set(5)"></div>
+<div id="rate" [ngStyle]="color()">Ocena: {{val}}/5 </div>
+</div>

@@ -1,0 +1,110 @@
+#container{
+    text-align: center;
+    font-size: 1.6vw;
+    border: rgba(128, 128, 128, 0.212) solid 1px;
+}
+
+button{
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    width: 10vw;
+    height: 3vw;
+    background-color: rgb(177, 68, 5);
+    color: white;
+    font-size: 1.6vw;
+    border:none;
+    border-radius: 5px;
+    margin-top: 1vw;
+    margin-left: 3vw;
+}
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+h3{
+    margin-top: 1vw;
+    font-size: 1.8vw;
+}
+
+#tabela{
+    margin-top: 1.3vw;
+    display: grid;
+    grid-template-areas: 't r' 'ch ch';
+    grid-template-columns: 50% 20%;
+    border: rgba(128, 128, 128, 0.212) solid 1px;
+}
+.title{
+    grid-area: t;
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+}
+.role{
+    grid-area: r;
+    margin-top: 1.5vw;
+}
+#dd{
+    height: 5vw;
+    display: grid;
+    grid-template-areas: 'u ra s';
+    grid-template-columns: 50% 20% 30%;
+    border: rgba(128, 128, 128, 0.212) solid 1px;
+
+}
+#rank{
+    margin-top: 1.5vw;
+    grid-area: ra;
+}
+#user{
+    margin-top: 1.5vw;
+    grid-area: u;
+}
+#st{
+    margin-top: 1.5vw;
+    grid-area: s;
+}
+
+#big{
+    width:50vw;
+    margin-left: 28vw;
+    box-shadow: gray 5px 5px 5px;
+    background-color: rgb(231, 233, 255);
+}
+#btn{
+    position: absolute;
+    right:23vw;
+}
+#rolebtn{
+    height: 2vw;
+    width: 3vw;
+    font-size: 1.6vw;
+}
+
+#change{
+    position: relative;
+    left: 4vw;
+    grid-area: ch;
+    display: grid;
+    grid-template-areas: 'z b1 b2 b3';
+    grid-template-columns: 50% 15% 15% 15%;
+}
+#z{
+    grid-area: z;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    font-size: 1.6vw;
+}
+.b1{
+    grid-area: b1;
+}
+.b2{
+    grid-area: b2;
+}
+.b3{
+    grid-area: b3;
+}

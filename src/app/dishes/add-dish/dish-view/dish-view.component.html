@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="container">{{makestr()}}
+<div id="header">
+    <h2>{{dish.name | uppercase}}</h2>
+</div>
+<div id="photo">
+    <img src={{dish.img}}>
+</div>
+<div id="rest">
+    <button id="delbtn" (click)="deleteDish()"><i class="fa fa-trash-o"></i></button>
+    <button id="update">  <a [title]="'aktualizuj'" [routerLink]="['../edit',dish.key]">Zaaktualizuj</a></button>
+</div>
+</div>

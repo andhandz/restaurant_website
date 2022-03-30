@@ -1,0 +1,156 @@
+body{
+    margin-top: 4vw;
+    border: 10px solid;
+}
+#container{
+    display: grid;
+    width: 80vw;
+    margin-left: 8vw;
+    margin-top: 4vw;
+    height: 30vw;
+    grid-template-areas: 
+    'head'
+    'pho'
+    'rest';
+    grid-template-columns: 95%;
+    grid-template-rows: 25% 45% 30%;
+    border-radius: 5px;
+    border: solid 1px linear-gradient(rgb(237, 241, 176),rgb(195, 196, 192));
+    background: linear-gradient(rgb(241, 243, 211),rgb(212, 214, 206));
+}
+#header{
+    margin-top: 0;
+    margin-left: 4vw;
+    grid-area:head;
+    text-align: center;
+    font-size: 2.5vw;
+    text-shadow: gray 3px 3px 3px;
+}
+h2{
+font-size: 2.5vw;
+margin-top: 1vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:gray;
+}
+#photo{
+    margin-left: 4vw;
+    grid-area: pho;
+    text-align: center;
+}
+#rest{
+    margin-left: 3vw;
+    grid-area: rest;
+    display: grid;
+    grid-template-areas: 
+    '. .'
+    'q price'
+    'add rmv';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 40% 40%;
+
+}
+img{
+    height:100%;
+    width: 30%;
+    border-radius: 5px;
+}
+#products{
+    display:flex;
+    grid-area: pro;
+    font-size: 1.7vw;
+}
+
+#description{
+    grid-area: desc;
+    font-size: 1.7vw;
+    line-height: 150%;
+}
+#category{
+    grid-area: cat;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: gray 1px 1px 1px;
+}
+#price{
+    grid-area: price;
+    margin-left: 25vw;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#quantity{
+    grid-area: q;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#cuisine{
+    grid-area: cu;
+    font-size: 1.9vw;
+    font-weight: bolder;
+    text-shadow: gray 1px 1px 1px;
+}
+#addbtn{
+    grid-area: add;
+    width:10%;
+    margin-left: 90%;
+    border:none;
+    background-color: rgb(212, 214, 206);
+    color: green;
+    font-size: 2vw;
+}
+#rmvbtn{
+    grid-area:rmv;
+    width:10%;
+    border:none;
+    background-color: rgb(212, 214, 206);
+    color: red;
+    font-size: 2vw;
+}
+
+#delbtn{
+position:relative;
+height: 3vw;
+width:3vw;
+left:72vw;
+bottom:20vw;
+border:none;
+color:white;
+background-color: red;
+font-size: 1.8vw;
+border-radius: 5px;
+}
+#delbtn:hover{
+    cursor: pointer;
+    width: 3.2vw;
+    height: 3.2vw;
+    background-color: tomato;
+}
+
+#addbtn:hover, #rmvbtn:hover{
+    cursor: pointer;
+    font-size: 2.2vw;
+}
+#update{
+    height: 3vw;
+    width: 15vw;
+    background-color: rgb(36, 158, 25);
+    font-size: 1.6vw;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+    top:3vw;
+    right:7vw;
+}
+a{
+    font-size: 1.6vw; 
+    color:white;
+}
+#update:hover{
+    cursor: pointer;
+    opacity:0.6;
+}

@@ -1,0 +1,90 @@
+.mapouter {
+    align-self: center;
+    grid-area: m;
+  }
+
+  iframe{
+      height: 30vw;
+      width: 40vw;
+      box-shadow: 5px 5px 5px gray;
+      border: none;
+  }
+h2{
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+}
+p{
+    font-size: 1.9vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.opis{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+    line-height: 180%;
+    font-size: 1.8vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.all{
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    padding-bottom: 3vw;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width:5vw;
+  height:5vw;
+  text-align: center;
+  padding-top:2.5vw;
+  font-size: 2.5vw;
+  margin-right: 0.5vw;
+  margin-left: 8vw;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width:5vw;
+  height:5vw;
+  text-align: center;
+  padding-top:2.5vw;
+  font-size: 2.5vw;
+}
+.container{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    display: grid;
+    grid-template-areas: 
+    'cc cc'
+    'c m';
+    grid-template-rows: 15% 90%;
+    grid-template-columns: 50% 50%;
+
+}
+.contact{
+    grid-area: c;
+    display: grid;
+    grid-template-areas: 
+    '. a .'
+    '. s .';
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 70% 30%;
+}
+.adres{
+    grid-area: a;
+}
+.socialmedia{
+    grid-area: s;
+}
+.c{
+    grid-area: cc;
+    position: relative;
+    bottom: 5vw;
+}

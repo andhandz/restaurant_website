@@ -1,0 +1,13 @@
+#dcounter{
+    color:white;
+    text-align: center;
+    font-size: 2.2vw;
+    width:40vw;
+    border-radius: 5px;
+    margin-top: 2vw;
+    margin-left: 30vw;
+}
+p{
+   padding-top: 1vw;
+   padding-bottom: 1vw;
+}

@@ -1,0 +1,18 @@
+<nav>
+  <div class="menu">
+    <h2>Restbar u Endrju</h2>
+  <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Strona Główna</a></li>
+      <li><a routerLink="/menu" routerLinkActive="active">Menu</a></li>
+      <li><a routerLink="/addDish" routerLinkActive="active">Dodaj Posiłek</a></li>
+      <li><a routerLink="/cart" routerLinkActive="active">Koszyk</a></li>
+      <button mat-button *ngIf="!isLogged" (click)="login()" >Zaloguj</button>
+      <button mat-button  *ngIf="!isLogged" (click)="register()">Zarejestruj</button>
+      <button mat-button  *ngIf="isLogged" (click)="logout()">Wyloguj</button>
+      <button mat-button *ngIf="isLogged == true" mat-button routerLink='userPanel' routerLinkActive='active'>Panel</button>
+      <li><span class="email" *ngIf="isLogged == true">Zalogowany jako: {{userEmail}}</span></li>
+    </ul>
+  </div>
+  </nav>
+  <router-outlet></router-outlet>
+

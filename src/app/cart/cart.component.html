@@ -1,0 +1,13 @@
+<div id="waluta">
+    <button id="curr" (click)="currencyForStart()">$</button>
+    <button id="curr" (click)="changeForEuro()">€</button>
+  </div>
+<div id="cart">
+<h2>Koszyk:</h2>
+    <div id="elem" *ngFor="let dish of this.cart"><div *ngIf="dish.count>0">{{dish.name | titlecase}}: {{dish.count}}szt </div></div>
+<h3>Do zapłaty: {{getSum()}}</h3>
+</div><br>
+<div  id=”test” > 
+  <p class=”my_test”> WdAI </div>
+<div>
+  {{ddd()}}

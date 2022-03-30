@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="container" [ngStyle]="ifExtreme(dish)">{{makestr()}} {{currency()}}
+<div id="header">
+    <a [title]="dish.name+'details'" [routerLink]="['../dish',dish.key]"><h2>{{dish.name | uppercase}}</h2></a>
+</div>
+<div id="photo">
+    <img src={{dish.img}}>
+</div>
+<div id="rest">
+    <div id="quantity" [ngStyle]="ComunicatVisualChanges()">{{Comunicat()}}</div>
+    <div id="price"> Cena: {{price}}</div>
+    <button *ngIf="this.userData!=null" id="addbtn" (click) = "addDish()" [ngStyle]="styleDisplayAddBtn()"><i class="fa fa-plus"></i></button>
+    <button *ngIf="this.userData!=null" id="rmvbtn" (click) = "rmvDish()" [ngStyle]="styleDisplayRmvBtn()"><i class="fa fa-minus"></i></button>
+</div>
+</div>

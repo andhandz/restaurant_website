@@ -1,0 +1,50 @@
+body,html{
+    height: 100%;
+    margin:0;
+ }
+ #menu{
+    display: flex;
+    flex-direction: column;
+    background: url("https://thumbs.dreamstime.com/b/hand-drawn-vector-seamless-fast-food-pattern-sketch-doodle-elements-can-be-used-wallpaper-website-background-wrapping-79399570.jpg");
+ }
+ #curr{
+    height: 4vw;
+    width: 4vw;
+    font-size: 2vw;
+    color:white;
+    background-color: rgb(35, 190, 175);
+    border: none;
+    margin-right: 0.3vw;
+    border-radius: 10px;
+ }
+ #curr:hover{
+    cursor: pointer;
+    background-color: rgb(81, 235, 219);
+ }
+#sizebtns{
+   text-align: center;
+   margin-bottom: 5vw;
+   border: solid 2px red;
+   background-color: rgb(243, 237, 225);
+   padding-bottom: 2vw;
+   margin-left: 20vw;
+   margin-right: 20vw;
+}
+
+#sbtn{
+   height: 3vw;
+   width: 3vw;
+   margin-left: 0.3vw;
+   font-size: 1.6vw;
+   color:white;
+   background-color: rgba(73, 73, 247, 0.801);
+   border:none;
+   border-radius: 2px;
+}
+#sbtn:hover{
+cursor: pointer;
+opacity:0.6;
+}
+p{font-size: 1.7vw;
+padding-top:1vw;
+padding-bottom: 1vw;}
