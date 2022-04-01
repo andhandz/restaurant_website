@@ -1,5 +1,21 @@
 # Zad8
 
+![Alt text](/ss/ss1.png?raw=true "Optional Title")    
+![Alt text](/ss/ss2.png?raw=true "Optional Title")    
+![Alt text](/ss/ss3.png?raw=true "Optional Title")    
+![Alt text](/ss/ss4.png?raw=true "Optional Title")    
+![Alt text](/ss/ss5.png?raw=true "Optional Title")    
+![Alt text](/ss/ss6.png?raw=true "Optional Title")    
+![Alt text](/ss/ss7.png?raw=true "Optional Title")    
+![Alt text](/ss/ss8.png?raw=true "Optional Title")    
+![Alt text](/ss/ss9.png?raw=true "Optional Title")    
+![Alt text](/ss/ss10.png?raw=true "Optional Title")    
+![Alt text](/ss/ss11.png?raw=true "Optional Title")    
+![Alt text](/ss/ss12.png?raw=true "Optional Title")    
+![Alt text](/ss/ss13.png?raw=true "Optional Title")    
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 ## Development server
