@@ -1,5 +1,5 @@
 # Restautan website
-There's my first angular project, The Restaurant website. The point was to practice web development, but from inside site. So I didn't pay attention for design, yet I was focused on creating a lot of useful mechanisms on website and connecting between front and back(firebase).   
+There's my first angular project, The Restaurant website. The point was to practice web development, but from inside site. <b>So I didn't pay attention for design</b>, yet I was focused on creating a lot of useful mechanisms on website and connecting between front and back(firebase).   
 # Used technlogies    
 -Angular, TS, SCSS, HTML, Firebase    
 # Guide   
