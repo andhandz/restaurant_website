@@ -1,4 +1,6 @@
-# Restautan website
+# Docker
+**Docker run:** ```docker run -d -p 8080:80 andhandz/restaurant```  
+# Restaurant website
 There's my first angular project, The Restaurant website. The point was to practice web development, but from inside site. <b>So I didn't pay attention for design</b>, yet I was focused on creating a lot of useful mechanisms on website and connecting between front and back(firebase).   
 # Used technlogies    
 -Angular, TS, SCSS, HTML, Firebase    
